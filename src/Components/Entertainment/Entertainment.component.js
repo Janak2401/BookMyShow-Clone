@@ -36,7 +36,7 @@ const EntCardSlider = () => {
 	  autoplay: false,
 	  slidesToShow: 5,
 	  slidesToScroll: 5,
-	  initialSlide: 0
+	  InitialSlide: 0
 	};
 
 	return (
