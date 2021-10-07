@@ -6,7 +6,8 @@ const Poster = (props) => {
 		<>
 			<div className="flex flex-col items-start gap-1">
 				<div className="h-96 pr-6">
-					<img src={props.src} alt={props.title} className="w-full h-full rounded-xl" />
+					<img src={`https://image.tmdb.org/t/p/original${props.poster_path}`} 
+					alt={props.original_title} className="w-full h-full rounded-xl" />
 				</div>
 
 				<h3 className={`text-lg font-bold ${

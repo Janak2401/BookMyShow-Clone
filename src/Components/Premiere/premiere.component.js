@@ -1,5 +1,6 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import Slider from 'react-slick';
+import axios from 'axios';
 
 // Poster component
 import Poster from '../Poster/poster.component';
