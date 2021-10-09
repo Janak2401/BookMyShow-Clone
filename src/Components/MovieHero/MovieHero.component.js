@@ -1,5 +1,6 @@
 import React from "react";
 import { BiShareAlt } from 'react-icons/bi';
+import { BsDot } from 'react-icons/bs';
 
 // Razorpay Integration
 const launchRazorPay = () => {
@@ -58,16 +59,43 @@ const MovieHero = () => {
               className="w-64 h-96 rounded-xl"
             />
             <div className="flex flex-col gap-4 pr-8">
+              <div className="flex gap-4 items-center h-5">
+                <img 
+                  src="https://in.bmscdn.com/moviemode/tvod/premiere-tag.png" 
+                  className="h-full"
+                />
+                <span className="bg-navcol-400 text-white text-sm rounded-full px-2 h-5 leading-snug">
+                Streaming Now</span>
+              </div>
+
               <h1 className="text-white text-4xl font-bold">The Suicide Squad</h1>
-              <p className="text-white text-sm mb-2">English</p>
+
+              <div className="flex gap-1 items-center text-gray-200 mt-2">
+                <span>4K</span>
+                <BsDot className="w-5 h-5"/>
+                <span>English</span>
+                <BsDot className="w-5 h-5"/>
+                <span>Hindi</span>
+              </div>
+
+              <div className="flex gap-1 items-center text-white text-lg mb-2">
+                <span>2h 14m</span>
+                <BsDot className="w-5 h-5"/>
+                <span>Action, Adventure, Comedy, Sci-Fi</span>
+                <BsDot className="w-5 h-5"/>
+                <span>18+</span>
+                <BsDot className="w-5 h-5"/>
+                <span>5 Aug, 2021</span>
+              </div>
+
               <button onClick={launchRazorPay}
-              class="bg-red-500 hover:bg-red-600 text-white text-xl py-2 px-4 rounded">
+              class="bg-red-500 hover:bg-red-600 text-white text-xl py-2 px-4 rounded w-1/2">
                 Book Tickets
               </button>
             </div>
           </div>
           <div className="absolute top-0 right-0">
-            <div className="flex gap-4 items-center bg-black bg-opacity-30 rounded p-3">
+            <div className="flex gap-4 items-center bg-black bg-opacity-40 rounded p-3">
               <BiShareAlt className="text-white w-8 h-8"/>
               <span className="text-xl text-white">Share</span>
             </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import MovieHero from '../Components/MovieHero/MovieHero.component';
-import CastCrewSlider from '../Components/CastCrew/castCrew.component';
+import { CastSlider, CrewSlider } from '../Components/CastCrew/castCrew.component';
 import { BiCameraMovie } from 'react-icons/bi';
 
 const MoviePage = () => {
@@ -30,7 +30,14 @@ const MoviePage = () => {
 
 				<div className="flex flex-col gap-4">
 					<h2 className="text-gray-800 font-bold text-2xl">Cast</h2>
-					<CastCrewSlider />
+					<CastSlider />
+				</div>
+
+				<hr className="my-8" />
+
+				<div className="flex flex-col gap-4">
+					<h2 className="text-gray-800 font-bold text-2xl">Crew</h2>
+					<CrewSlider />
 				</div>
 			</div>
 		</>

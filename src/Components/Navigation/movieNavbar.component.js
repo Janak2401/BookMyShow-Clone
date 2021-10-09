@@ -22,8 +22,8 @@ const NavLg = () => {
 	return (
 		<div className="container mx-auto flex items-center justify-around">
 			<div className="flex items-center gap-2 w-1/2">
-				<div className="w-12 h-12">
-					<img src="https://getlogo.net/wp-content/uploads/2020/04/bookmyshow-logo-vector.png" alt="logo" className="w-full h-full" />
+				<div className="w-32 h-12">
+					<img src="https://in.bmscdn.com/webin/common/icons/logo.svg" alt="logo" className="w-full h-full fill-current text-navcol-200" />
 				</div>
 				<div className="w-full flex items-center bg-white gap-3 px-2 py-1 rounded-sm">
 					<BiSearch />

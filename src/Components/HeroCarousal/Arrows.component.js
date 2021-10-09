@@ -1,14 +1,15 @@
 import React from 'react';
+import { GrNext,GrPrevious } from 'react-icons/gr';
 
 export const NextArrow = (props) => {
 	// const{className, style, onClick} = props;
 	return (
 		<>
-			<div
-				className={props.className}
-				style={{ ...props.style, background: "red"}}
-				onClick={props.onClick}
-			/>
+		<GrNext
+			className={props.className}
+			style={{ ...props.style, backgroundColor:"white"}}
+			onClick={props.onClick}
+		/>
 		</>
 	)
 };
@@ -16,9 +17,9 @@ export const NextArrow = (props) => {
 export const PrevArrow = (props) => {
 	return (
 		<>
-			<div
+			<GrPrevious
 				className={props.className}
-				style={{ ...props.style}}
+				style={{ ...props.style, backgroundColor:"white"}}
 				onClick={props.onClick}
 			/>
 		</>
