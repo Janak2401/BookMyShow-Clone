@@ -18,17 +18,6 @@ const NavSm = () => {
 	)
 };
 
-const NavMd = () => {
-	return (
-		<>
-			<div className="w-full flex items-center bg-white gap-3 px-2 py-1 rounded-sm">
-				<BiSearch />
-				<input type="search" className="w-full focus:outline-none" placeholder="Search for movies, shows and events"/>
-			</div>
-		</>
-	)
-};
-
 const NavLg = () => {
 	return (
 		<div className="container mx-auto flex items-center justify-around">

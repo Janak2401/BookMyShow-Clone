@@ -63,13 +63,13 @@ const HomePage = () => {
 
 	return (
 		<>
-		<div className="flex flex-col gap-10">
-			<div className="container mx-auto px-24">
-				<h1 className="text-black font-bold text-2xl">The Best of Entertainment</h1>
+		<div className="flex flex-col gap-10 bg-gray-200">
+			<div className="container mx-auto px-24 my-12">
+				<h1 className="text-black font-bold text-2xl px-2 py-4">The Best of Entertainment</h1>
 				<EntCardSlider />
 			</div>
 
-			<div className="bg-navcol-200 py-6">
+			<div className="bg-navcol-200 py-6 my-12">
 				<div className="container mx-auto px-24">
 					<div className="flex">
 						<img src="https://in.bmscdn.com/discovery-catalog/collections/tr:w-1440,h-120/premiere-rupay-banner-web-collection-202104230555.png" 
@@ -79,35 +79,35 @@ const HomePage = () => {
 				</div>
 			</div>
 
-			<div className="container mx-auto px-24">
+			<div className="container mx-auto px-24 my-6">
 				<PosterSlider 
 				images={nowPlaying}
 				title="Now Playing"
 				isDark={false}/>
 			</div>
 			
-			<div className="container mx-auto px-24">
+			<div className="container mx-auto px-24 my-6">
 				<PosterSlider 
 				images={upcomingMovies}
 				title="Upcoming Movies"
 				isDark={false}/>
 			</div>
 			
-			<div className="container mx-auto px-24">
+			<div className="container mx-auto px-24 my-6">
 				<PosterSlider 
 				images={topMovies}
 				title="Top Rated Movies"
 				isDark={false}/>
 			</div>
 			
-			<div className="container mx-auto px-24">
+			<div className="container mx-auto px-24 my-6">
 				<PosterSlider 
 				images={popularShows}
 				title="Popular TV Shows"
 				isDark={false}/>
 			</div>
 			
-			<div className="container mx-auto px-24">
+			<div className="container mx-auto px-24 my-6">
 				<PosterSlider 
 				images={topShows}
 				title="Top Rated TV Shows"

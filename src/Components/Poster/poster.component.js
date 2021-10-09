@@ -1,4 +1,5 @@
 import React from 'react';
+import { BsStarFill } from 'react-icons/bs';
 
 // props -> src, title, subtitle, isDark(bool)
 const Poster = (props) => {
@@ -14,10 +15,12 @@ const Poster = (props) => {
 					props.isDark ? "text-white" : "text-gray-700"
 				}`}>{props.title}</h3>
 
-				<p className={`text-sm font-bold ${
-					props.isDark ? "text-white" : "text-gray-700"
-				}`}>{props.subtitle}</p>
-
+				<div className="flex gap-2 items-center">
+					<BsStarFill className="text-yellow-300" />
+					<p className={`text-sm font-bold ${
+						props.isDark ? "text-white" : "text-gray-700"
+					}`}>{props.vote_average}</p>
+				</div>
 			</div>
 		</>
 	)
