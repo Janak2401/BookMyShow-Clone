@@ -75,7 +75,7 @@ const HomePage = () => {
 						<img src="https://in.bmscdn.com/discovery-catalog/collections/tr:w-1440,h-120/premiere-rupay-banner-web-collection-202104230555.png" 
 						alt="RuPay" className="w-full h-full" />
 					</div>
-					<PosterSlider images={popularMovies} title="Premieres" subtitle="Brand new releases every Friday" isDark/>
+					<PosterSlider images={popularMovies} title="Premieres" subtitle="Brand new releases every Friday" isDark isTitle/>
 				</div>
 			</div>
 
@@ -83,6 +83,7 @@ const HomePage = () => {
 				<PosterSlider 
 				images={nowPlaying}
 				title="Now Playing"
+				isTitle={true}
 				isDark={false}/>
 			</div>
 			
@@ -90,6 +91,7 @@ const HomePage = () => {
 				<PosterSlider 
 				images={upcomingMovies}
 				title="Upcoming Movies"
+				isTitle={true}
 				isDark={false}/>
 			</div>
 			
@@ -97,6 +99,7 @@ const HomePage = () => {
 				<PosterSlider 
 				images={topMovies}
 				title="Top Rated Movies"
+				isTitle={true}
 				isDark={false}/>
 			</div>
 			
@@ -104,6 +107,7 @@ const HomePage = () => {
 				<PosterSlider 
 				images={popularShows}
 				title="Popular TV Shows"
+				isTitle={false}
 				isDark={false}/>
 			</div>
 			
@@ -111,6 +115,7 @@ const HomePage = () => {
 				<PosterSlider 
 				images={topShows}
 				title="Top Rated TV Shows"
+				isTitle={false}
 				isDark={false}/>
 			</div>
 		</div>

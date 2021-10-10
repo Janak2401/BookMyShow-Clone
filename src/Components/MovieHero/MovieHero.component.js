@@ -10,7 +10,7 @@ const launchRazorPay = () => {
     currency: "INR",
     name: "Book My Show clone",
     description: "Movie purchase",
-    image: "https://i.ibb.co/zPBYW3H/imgbin-bookmyshow-office-android-ticket-png.png",
+    image: "https://in.bmscdn.com/webin/common/icons/logo.svg",
     handler: () => {
       alert("Payment Successful")
     },

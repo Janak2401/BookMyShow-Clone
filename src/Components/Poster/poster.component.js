@@ -13,7 +13,7 @@ const Poster = (props) => {
 
 				<h3 className={`text-lg font-bold ${
 					props.isDark ? "text-white" : "text-gray-700"
-				}`}>{props.title}</h3>
+				}`}>{props.isTitle ? props.title : props.name}</h3>
 
 				<div className="flex gap-2 items-center">
 					<BsStarFill className="text-yellow-300" />
